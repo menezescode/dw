@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" name="date" data-mask="00/00/0000" placeholder="00/00/0000">
+  <input type="text" name="time" placeholder="00:00:00">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.min.js"></script>
+  <script>
+    $('input[name=time]').mask('00:00:00');
+  </script>
+</body>
+</html>
