@@ -1,0 +1,14 @@
+@startuml
+digraph world {
+size="7,7";
+
+    html -> {head, body}
+    head -> {title, meta, link, style}
+	body -> {h1, article, article2}
+	article -> {h2, p1, table, p2, p3}
+	table -> {thead, tbody}
+	tbody -> {tr1, tr2, tr3, tr4}
+	tr1 -> {td1, td2, td3, td4, td5}
+	article2 -> {h3, p4, p5, p6}
+}
+@enduml

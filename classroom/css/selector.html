@@ -4,15 +4,80 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <style>
+    body > * {
+      margin: 0px;
+    }
+
+    a {
+      cursor: cursor;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    article:nth-of-type(2){
+      counter-reset: counter;
+    }
+    article:nth-of-type(2) p::before {
+      content: "§" counter(counter) " ";
+      counter-increment: counter;
+      font-weight: bold;
+    }
+
+    body {
+      font-family: arial, sans-serif; /*inheritance*/
+    }
+
+    /*
+      even: 2n
+      odd: 2n+1
+    */
+    table *{
+      border-collapse: collapse;
+    }
+    table tr:nth-child(odd) td{
+      background-color: #ccc;
+    }
+
+    article {
+      /*shorthand border*/
+      border: 1px solid #000;
+      /*border-width: 1px;
+      border-style: solid;
+      border-color: #000;*/
+    }
+
     p#first {
       color: red;
+    }
+
+    p {
+      color: #222;
     }
 
     p.last {
       color: green;
     }
-    article:nth-of-type(1) h2:nth-of-type(2) + p {
+
+    p:hover {
+      background-color: #CCC;
+    }
+
+    article:first-of-type p:nth-last-of-type(2) {
+      color: green !important;
+    }
+
+    article:first-of-type p:nth-last-child(2) {
+      color: pink;
+    }
+
+    body > article:nth-of-type(1) h2:nth-of-type(2) + p {
       color: blue;
+    }
+
+    p:last-child {
+      color: purple;
     }
   </style>
 </head>
@@ -22,13 +87,84 @@
   <article>
     <h1>Título 1</h1>
     <h2>Subtítulo 1.1</h2>
-    <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi possimus mollitia sunt ut fuga consequuntur quaerat eaque ipsam, deleniti, quae cumque repellendus alias consectetur modi voluptate enim, commodi quia neque?</p>
-    <p>Ex numquam atque tempore quod provident quidem accusantium dignissimos alias ipsum natus minus fugiat quasi ipsa sit debitis vitae adipisci molestias eum voluptatibus eligendi quas qui, fuga omnis iure. Laudantium?</p>
+    <p id="first">Lorem ipsum dolor sit amet, <a href="https://www.w3.org/TR/2011/REC-css3-selectors-20110929/#selectors">tabela de seletores</a>consectetur adipisicing elit. Nisi possimus mollitia sunt ut fuga consequuntur quaerat eaque ipsam, deleniti, quae cumque repellendus alias consectetur modi voluptate enim, commodi quia neque?</p>
+    <!-- table>(thead>tr>th*6>{Cabeçalho $})+(tbody>tr*7>td*6>{conteúdo $}) -->
+    <table>
+      <thead>
+        <tr>
+          <th>Cabeçalho 1</th>
+          <th>Cabeçalho 2</th>
+          <th>Cabeçalho 3</th>
+          <th>Cabeçalho 4</th>
+          <th>Cabeçalho 5</th>
+          <th>Cabeçalho 6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>conteúdo 1</td>
+          <td>conteúdo 2</td>
+          <td>conteúdo 3</td>
+          <td>conteúdo 4</td>
+          <td>conteúdo 5</td>
+          <td>conteúdo 6</td>
+        </tr>
+        <tr>
+          <td>conteúdo 1</td>
+          <td>conteúdo 2</td>
+          <td>conteúdo 3</td>
+          <td>conteúdo 4</td>
+          <td>conteúdo 5</td>
+          <td>conteúdo 6</td>
+        </tr>
+        <tr>
+          <td>conteúdo 1</td>
+          <td>conteúdo 2</td>
+          <td>conteúdo 3</td>
+          <td>conteúdo 4</td>
+          <td>conteúdo 5</td>
+          <td>conteúdo 6</td>
+        </tr>
+        <tr>
+          <td>conteúdo 1</td>
+          <td>conteúdo 2</td>
+          <td>conteúdo 3</td>
+          <td>conteúdo 4</td>
+          <td>conteúdo 5</td>
+          <td>conteúdo 6</td>
+        </tr>
+        <tr>
+          <td>conteúdo 1</td>
+          <td>conteúdo 2</td>
+          <td>conteúdo 3</td>
+          <td>conteúdo 4</td>
+          <td>conteúdo 5</td>
+          <td>conteúdo 6</td>
+        </tr>
+        <tr>
+          <td>conteúdo 1</td>
+          <td>conteúdo 2</td>
+          <td>conteúdo 3</td>
+          <td>conteúdo 4</td>
+          <td>conteúdo 5</td>
+          <td>conteúdo 6</td>
+        </tr>
+        <tr>
+          <td>conteúdo 1</td>
+          <td>conteúdo 2</td>
+          <td>conteúdo 3</td>
+          <td>conteúdo 4</td>
+          <td>conteúdo 5</td>
+          <td>conteúdo 6</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="color:orange">Ex numquam atque tempore quod provident quidem accusantium dignissimos alias ipsum natus minus fugiat quasi ipsa sit debitis vitae adipisci molestias eum voluptatibus eligendi quas qui, fuga omnis iure. Laudantium?</p>
     <p>Eligendi enim sunt cum dolor numquam quisquam magni magnam quae, labore. Ab aut nobis eaque explicabo! Vitae, natus, non corporis nostrum nemo, omnis ea excepturi dignissimos, distinctio repellat repellendus fugiat.</p>
     <p>Consectetur nam recusandae eligendi est eveniet aperiam id laboriosam cumque commodi? A adipisci ducimus, maiores nesciunt aliquam qui dicta optio voluptates distinctio cum labore amet cumque perferendis non, voluptatem fuga?</p>
     <p class="last">Ad delectus, perspiciatis, eaque hic iste culpa cumque voluptatum natus, quis sed sapiente architecto minus fuga dicta. Inventore saepe maiores adipisci sequi nostrum nihil cumque qui dignissimos dolores, sapiente, error.</p>
     <p class="last">Magnam animi pariatur labore dicta perferendis perspiciatis atque quae obcaecati similique possimus commodi ut, quia quaerat consequuntur autem neque qui dolorum delectus deserunt nulla? Voluptas eum reiciendis vel, repellendus praesentium!</p>
-    <p class="last">Voluptatibus unde ex exercitationem, expedita ipsa quos! Perspiciatis ipsum debitis ut laudantium, consequatur voluptate, ipsam dignissimos optio amet incidunt deleniti, doloremque neque quas. Tenetur, incidunt excepturi aspernatur, perferendis nisi beatae.</p>
+    <p class="last outro">Voluptatibus unde ex exercitationem, expedita ipsa quos! Perspiciatis ipsum debitis ut laudantium, consequatur voluptate, ipsam dignissimos optio amet incidunt deleniti, doloremque neque quas. Tenetur, incidunt excepturi aspernatur, perferendis nisi beatae.</p>
     <h2>Subtítulo 1.2</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus earum, harum. Maxime id soluta rerum harum qui perspiciatis nesciunt nam veniam ad nemo doloremque, fuga fugit dolor vitae nostrum ab.</p>
     <p>Asperiores natus, nisi error dolores odio quod quaerat laboriosam dolor, aliquid, aperiam ipsa modi. Maiores ipsa ipsum libero unde optio id eaque corrupti amet. Fuga harum, eum non molestias quidem.</p>

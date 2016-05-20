@@ -19,6 +19,8 @@
 * [Herança e Cascata](https://docs.webplatform.org/wiki/tutorials/inheritance_and_cascade)
 * User style sheet:  [Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) e [Estilos](http://userstyles.org/)
 * Background: [cores](http://www.colourco.de/), [strip](http://www.stripegenerator.com/), [gradient](http://www.generateit.net/gradient/index.php), [imagens](http://www.freepik.com/free-vectors/background)
+* [Efeito Cap Drops](https://css-tricks.com/snippets/css/drop-caps/)
+* Counters CSS: [CSS Tricks](https://css-tricks.com/numbering-in-style/) e[Nested](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters)
 * Ícones: [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
 * Preprocessor: [Sass](http://sass-lang.com/), [PostCSS](http://postcss.org/)
 * Framework: [Bootsrap](http://getbootstrap.com/) ([cheat sheet](http://hackerthemes.com/bootstrap-cheatsheet/)), [Foundation](http://foundation.zurb.com/), [PureCSS](http://purecss.io/), [Materialize](http://materializecss.com/), [SemanticUI](http://semantic-ui.com/)
