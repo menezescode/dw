@@ -5,13 +5,12 @@
 * Portais: [W3C](https://www.w3.org/standards/webdesign/htmlcss), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) e  [WP](https://docs.webplatform.org/wiki/css)
 * Guias: [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS) e [WP](https://docs.webplatform.org/wiki/css/tutorials)
 * Padrões: [Notícias](https://www.w3.org/Style/CSS/Overview.en.html), [CSS Current Status](https://www.w3.org/standards/techs/css#w3c_all), [CSS Specifications](https://www.w3.org/Style/CSS/specs.en.html)
-* Versões: [Draft](https://www.w3.org/TR/CSS/), [2](https://www.w3.org/TR/2011/REC-css3-selectors-20110929/), [Outros](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS3)
+* Versões: [Draft](https://www.w3.org/TR/CSS/), [2](https://www.w3.org/TR/CSS2/), [Outros](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS3)
 * Seletores: [WP](https://docs.webplatform.org/wiki/css/selectors), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Selectors), W3C ([Level 3](https://www.w3.org/TR/2011/REC-css3-selectors-20110929/#selectors) e [Level 4](https://www.w3.org/TR/2013/WD-selectors4-20130502/#overview))
-* Propriedades: [WP](https://docs.webplatform.org/wiki/css/properties), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index) e [W3C](https://www.w3.org/TR/CSS2/propidx.html) (resumo: [smashing](https://www.smashingmagazine.com/2009/07/css-3-cheat-sheet-pdf/), [w3school](http://www.w3schools.com/cssref/), [tutorialspoint](http://www.tutorialspoint.com/css/css_references.htm))
+* Propriedades: [WP](https://docs.webplatform.org/wiki/css/properties), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index) e [W3C](https://www.w3.org/TR/CSS2/propidx.html) (resumo: [smashing](https://www.smashingmagazine.com/2009/07/css-3-cheat-sheet-pdf/), [w3school](http://www.w3schools.com/cssref/), [tutorialspoint](http://www.tutorialspoint.com/css/css_references.htm), [1stwebdesigner](http://www.1stwebdesigner.com/freebies/css-cheat-sheets-designers/))
 * Funções: [WP](https://docs.webplatform.org/wiki/css/functions) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index)
 * At-rule: [WP](https://docs.webplatform.org/wiki/css/atrules) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule)
 * Media query: [WP](https://docs.webplatform.org/wiki/css/mediaqueries), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index) e [W3C](https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
-* Cheat Sheet: [smashingmagazine](http://www.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/), [1stwebdesigner](http://www.1stwebdesigner.com/freebies/css-cheat-sheets-designers/)
 
 ## Conteúdo
 
@@ -28,3 +27,6 @@
 
 * Pacotes do Atom : [CSSLint](https://atom.io/packages/csslint)
 *  Documentação: [devdocs.io](http://devdocs.io/html) e [kapeli](https://kapeli.com/mdn_offline)
+
+
+http://colorfulgradients.tumblr.com/
