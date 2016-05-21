@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <style>
+    /*https://www.fontsquirrel.com/fonts/Raleway*/
+    @font-face {
+      font-family: 'Raleway Regular';
+      src: url('font/Raleway-Regular.ttf');
+    }
+
+    @font-face {
+      font-family: 'Pt Serif Regular';
+      src: url('font/PT-Serif-Regular.ttf');
+    }
+
+    html, body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      background-color: #f7f9fb;
+      background-image: url('img/html5css3badges.png');
+      background-position: center bottom 10px;
+      background-repeat: no-repeat;
+      background-size: 100px;
+      font-family: Pt Serif Regular, sans-serif;
+    }
+
+    body>header {
+      background-color: #303030;
+      position: fixed;
+      color: #f7f9fb;
+      height: 100px;
+      width: 100%;
+      top: 0px;
+    }
+    body>header ul {
+      float: right;
+      padding-top: 25px;
+      padding-right: 100px;
+    }
+    body>header ul li {
+      display: inline-block;
+    }
+
+    body>header ul li a {
+      font-family: Raleway Regular, sans-serif;
+      margin-left: 15px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    body>header h1 {
+      margin: 0px;
+      /*font-family: 'Fjalla One', sans-serif;*/
+      font-family: Raleway Regular, sans-serif;
+      font-size:40px;
+      /*margin: auto;*/
+      padding-top: 20px;
+      padding-left: 20px;
+      width: 330px;
+      height: 40px;
+    }
+    body>header h1, body>header ul {
+      display: inline-block;
+    }
+    body>header i.fa-bicycle{
+      font-size: 1.3em;
+    }
+
+    article {
+      /*background-color: #ecf0f1;*/
+      /*background-color: rgba(236, 240, 241, 0.79);*/
+      background-color: #fff;
+      box-shadow: 0px 30px 30px 0px rgba(139,152,190,0.2);
+      width: 70%;
+      margin: auto;
+      margin-bottom: 90px;
+      box-sizing: border-box;
+      padding: 50px;
+    }
+
+    body h1, article h1{
+      font-family: Raleway Regular, sans-serif;
+    }
+
+    body>h1 {
+      margin-top: 140px;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    article h1 {
+      font-size: 1.5em;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    article p {
+      line-height: 1.5;
+    }
+    article h1 a {
+      /*background-color: transparent;*/
+      display: none;
+      text-decoration: none;
+    }
+    article h1:hover a{
+      display: inline;
+      outline-width: 0;
+      margin-left: -22px;
+    }
+
+    /*https://www.itsupportguides.com/tech-tips-tricks/how-to-offset-anchor-tag-link-using-css/*/
+    :target:before {
+      content: "";
+      display: block;
+      height: 140px; /* fixed header height*/
+      margin: -140px 0 0; /* negative fixed header height */
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portal DW <i class="fa fa-bicycle" aria-hidden="true"></i></h1>
+    <ul>
+      <li><a href="#">Página Inicial</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </header>
+  <h1>Criando o primeiro Layout</h1>
+  <article>
+    <h1>
+      <a id="os-primeiros-passos" class="anchor" href="#os-primeiros-passos">
+        <img src="img/octicon-link.svg" alt="oction-link">
+      </a>
+      Os primeiros passos
+    </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus minima voluptas nostrum quas repudiandae, quisquam quam doloremque nobis recusandae nemo numquam repellendus delectus nisi maiores ullam excepturi, ea magnam facilis.</p>
+    <p>Fugiat necessitatibus ipsa cum, impedit dolor aliquam consectetur ea. Facere cupiditate quod magnam aspernatur deleniti provident reprehenderit quas minima quos repellendus voluptatibus, delectus placeat nisi accusamus eius, voluptatum ut beatae.</p>
+    <p>Ducimus, ipsa dolorem? Maxime corporis vero, dicta, molestiae libero maiores voluptates praesentium perferendis aut aperiam possimus facere blanditiis in repellendus, quidem impedit commodi obcaecati? Earum, excepturi omnis dolorum pariatur tenetur?</p>
+    <p>Eos tempore, nulla quo aperiam similique dicta beatae incidunt minima. Laudantium suscipit non magnam iste tenetur explicabo, perferendis dolore necessitatibus voluptatibus asperiores commodi sunt rem? Repudiandae atque sunt, provident facere!</p>
+    <p>Atque eum neque, officia nobis necessitatibus dolores odio, doloremque debitis autem ut reprehenderit quisquam quo nemo quasi labore consequuntur officiis soluta cum praesentium molestias voluptas, molestiae asperiores mollitia provident. Sapiente!</p>
+    <p>Repellat, exercitationem dolor, excepturi quas fugiat error veritatis iusto labore, unde reprehenderit facilis nemo delectus? Ipsam laborum, iusto aspernatur beatae, consequuntur ratione libero animi molestias, fuga architecto ad, quae nobis!</p>
+    <p>Ab ipsum ea numquam, eaque asperiores quibusdam, dicta doloribus, quos officia debitis at eum magni. Autem asperiores atque dolorum perferendis eligendi sed quia, quis fugit, id architecto ad voluptatum repudiandae.</p>
+    <h1>
+      <a id="questoes-de-estilo" class="anchor" href="#questoes-de-estilo">
+        <img src="img/octicon-link.svg">
+      </a>
+      Questões de estilo
+    </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo explicabo nihil commodi dignissimos, est, deleniti. Ea dicta perferendis commodi officiis sequi delectus, nihil ex quo, quas repudiandae nulla, atque mollitia.</p>
+    <p>Magni quia placeat quam fugiat ducimus voluptatum molestias. Explicabo cupiditate quam sed obcaecati, expedita illo deserunt eligendi nisi tempora doloribus voluptatum iste nobis quas repellendus mollitia saepe veritatis. Dolor, ipsum.</p>
+    <p>Aut quae rem voluptatum impedit voluptas ea animi culpa totam debitis porro nostrum, quo architecto, possimus blanditiis officiis sint harum voluptatem est sequi esse labore similique! Voluptates a nihil totam.</p>
+    <p>Recusandae voluptatibus sed voluptates? Itaque perferendis dolore, mollitia non cupiditate dolorem magni cum quam molestias possimus. Esse distinctio molestiae dolorum labore alias, quas tempore? Atque, esse ipsa laborum necessitatibus mollitia.</p>
+    <p>Amet tempore temporibus sit aperiam nesciunt quae, earum! Amet odit dolores vitae animi autem voluptate itaque harum debitis obcaecati sapiente hic culpa nam quia expedita non, ipsa sequi maxime velit.</p>
+    <p>Doloremque explicabo quam possimus voluptas sequi eligendi inventore ad velit quasi accusamus, ipsam dicta architecto vero provident? Accusantium earum, quae! Modi reiciendis earum sequi quaerat quae, tempora iste sunt dolores?</p>
+    <p>Molestias perspiciatis in harum consequuntur, blanditiis, dolore nobis! Id mollitia fuga esse architecto saepe, aliquid, ratione sed hic ipsum voluptatum? Inventore recusandae autem, atque dolorem suscipit iure aliquid eos explicabo!</p>
+  </article>
+</body>
+</html>
