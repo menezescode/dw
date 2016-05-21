@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <style>
     /*https://www.fontsquirrel.com/fonts/Raleway*/
@@ -12,6 +12,7 @@
       src: url('font/Raleway-Regular.ttf');
     }
 
+    /*https://www.fontsquirrel.com/fonts/pt-serif*/
     @font-face {
       font-family: 'Pt Serif Regular';
       src: url('font/PT-Serif-Regular.ttf');
@@ -31,6 +32,7 @@
       font-family: Pt Serif Regular, sans-serif;
     }
 
+    /* Header */
     body>header {
       background-color: #303030;
       position: fixed;
@@ -39,20 +41,25 @@
       width: 100%;
       top: 0px;
     }
-    body>header ul {
+
+    body>header nav {
       float: right;
       padding-top: 25px;
       padding-right: 100px;
     }
-    body>header ul li {
+    body>header nav ul li {
       display: inline-block;
     }
 
-    body>header ul li a {
+    body>header nav ul li a {
       font-family: Raleway Regular, sans-serif;
       margin-left: 15px;
       color: #fff;
       text-decoration: none;
+    }
+
+    body>header h1, body>header nav {
+      display: inline-block;
     }
 
     body>header h1 {
@@ -66,11 +73,19 @@
       width: 330px;
       height: 40px;
     }
-    body>header h1, body>header ul {
-      display: inline-block;
-    }
-    body>header i.fa-bicycle{
+
+    body>header h1 i.fa-bicycle {
       font-size: 1.3em;
+    }
+
+    body>h1 {
+      margin-top: 140px;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    body h1, article h1{
+      font-family: Raleway Regular, sans-serif;
     }
 
     article {
@@ -85,34 +100,21 @@
       padding: 50px;
     }
 
-    body h1, article h1{
-      font-family: Raleway Regular, sans-serif;
-    }
-
-    body>h1 {
-      margin-top: 140px;
-      font-size: 2em;
-      text-align: center;
-    }
-
     article h1 {
       font-size: 1.5em;
       border-bottom: 1px solid #eee;
       padding-bottom: 10px;
     }
 
-    article p {
-      line-height: 1.5;
-    }
     article h1 a {
       /*background-color: transparent;*/
-      display: none;
+      visibility: hidden;
       text-decoration: none;
-    }
-    article h1:hover a{
-      display: inline;
-      outline-width: 0;
       margin-left: -22px;
+    }
+
+    article h1:hover a{
+      visibility: visible;
     }
 
     /*https://www.itsupportguides.com/tech-tips-tricks/how-to-offset-anchor-tag-link-using-css/*/
@@ -123,16 +125,68 @@
       margin: -140px 0 0; /* negative fixed header height */
     }
 
+    article p {
+      line-height: 1.5;
+    }
+
+    /*Large devices*/
+    @media screen and (min-width:1200px){
+
+    }
+
+    /*Medium devices*/
+    @media screen and (min-width:992px) and (max-width:1199px) {
+
+    }
+
+    /*Small devices*/
+    @media screen and (min-width:768px) and (max-width:991px) {
+
+    }
+
+    /*Extra small devices*/
+    @media screen and (max-width:767px) {
+      body>header {
+        height: 150px;
+      }
+
+      body>header nav, body>header h1 {
+        display:block;
+      }
+
+      body>header nav {
+        float: left;
+      }
+      body>header nav ul {
+        padding-left: 0px;
+      }
+      body>h1 {
+        margin-top: 190px;
+      }
+
+      article{
+        min-width: 500px;
+      }
+    }
+
+    /* printer */
+    @media print {
+      header {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Portal DW <i class="fa fa-bicycle" aria-hidden="true"></i></h1>
-    <ul>
-      <li><a href="#">Página Inicial</a></li>
-      <li><a href="#">Sobre</a></li>
-      <li><a href="#">Contato</a></li>
-    </ul>
+    <nav>
+      <ul>
+        <li><a href="#">Página Inicial</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
   </header>
   <h1>Criando o primeiro Layout</h1>
   <article>
