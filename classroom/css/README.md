@@ -14,16 +14,33 @@
 
 ## Conteúdo
 
-* [Recomendações de Design ](https://design.google.com/)
 * CSS Awesome [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sotayamashita/awesome-css)
-* [Herança e Cascata](https://docs.webplatform.org/wiki/tutorials/inheritance_and_cascade)
-* User style sheet:  [Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) e [Estilos](http://userstyles.org/)
-* Background: [cores](http://www.colourco.de/), [strip](http://www.stripegenerator.com/), [gradient](http://www.generateit.net/gradient/index.php), [imagens](http://www.freepik.com/free-vectors/background)
-* [Efeito Cap Drops](https://css-tricks.com/snippets/css/drop-caps/)
-* Counters CSS: [CSS Tricks](https://css-tricks.com/numbering-in-style/) e[Nested](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters)
-* Ícones: [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
-* Preprocessor: [Sass](http://sass-lang.com/), [PostCSS](http://postcss.org/)
-* Framework: [Bootsrap](http://getbootstrap.com/) ([cheat sheet](http://hackerthemes.com/bootstrap-cheatsheet/)), [Foundation](http://foundation.zurb.com/), [PureCSS](http://purecss.io/), [Materialize](http://materializecss.com/), [SemanticUI](http://semantic-ui.com/)
+* Design
+  * [Flat Design](https://en.wikipedia.org/wiki/Flat_design)
+  * [Material Design](http://www.google.com/design/spec/material-design/introduction.html): [Icons](https://materialdesignicons.com/), [Cores](http://www.materialui.co/), [Exemplos](http://www.materialup.com/),  [Bootstrap](http://fezvrasta.github.io/bootstrap-material-design/), [Materialize CSS](http://materializecss.com/), [getmdl](https://getmdl.io/), [Material UI](http://www.material-ui.com/)
+  * [Google Design ](https://design.google.com/)
+  * [Metro Design](https://www.microsoft.com/en-us/stories/design/): [MetroUI](https://metroui.org.ua/), [Exemplos](http://theultralinx.com/2013/04/15-metro-design-examples/)
+  * Dicas, Tendências e Conceitos
+    * [Material vs Flat](http://designmodo.com/flat-vs-material/)
+    * [9 Graphic Design Trends](https://designschool.canva.com/blog/design-trends-2016/)
+* Conceitos:
+  * [Herança e Cascata](https://docs.webplatform.org/wiki/tutorials/inheritance_and_cascade)
+  * Counters CSS: [CSS Tricks](https://css-tricks.com/numbering-in-style/) e[Nested](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters)
+  * User style sheet:  [Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) e [Estilos](http://userstyles.org/)
+  * [Efeito Cap Drops](https://css-tricks.com/snippets/css/drop-caps/)
+* Recursos e Componentes
+  * Background: [cores](http://www.colourco.de/), [strip](http://www.stripegenerator.com/), [gradient](http://www.generateit.net/gradient/index.php), [imagens](http://www.freepik.com/free-vectors/background)
+  * Ícones: [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
+* Preprocessor:
+  * [Sass](http://sass-lang.com/)
+  * [PostCSS](http://postcss.org/)
+* Framework:
+  * [Bootsrap](http://getbootstrap.com/) ([cheat sheet](http://hackerthemes.com/bootstrap-cheatsheet/))
+  * [Foundation](http://foundation.zurb.com/)
+  * [PureCSS](http://purecss.io/)
+  * [Materialize CSS](http://materializecss.com/)
+  * [SemanticUI](http://semantic-ui.com/)
+
 
 ## Ferramenta
 
@@ -32,3 +49,9 @@
 
 
 http://colorfulgradients.tumblr.com/
+Human interface guidelines
+design trends
+ux
+https://developer.mozilla.org/en/docs/Web/CSS/length
+https://www.itsupportguides.com/tech-tips-tricks/how-to-offset-anchor-tag-link-using-css/
+http://noeticforce.com/best-material-design-web-frameworks

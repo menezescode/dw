@@ -1,0 +1,36 @@
+digraph htmldom{
+  # rankdir=LR;
+  # node [shape = circle];
+  # ordering=out;
+  # graph [ordering="out"];
+  edge [dir=back];
+  h1 [label="h1"];
+  h2 [label="h2"];
+  h3 [label="h2"];
+  article1 [label="article"];
+  article2 [label="article"];
+  p1 [label="p"];
+  table [label="table"];
+  p2 [label="p"];
+  p3 [label="p"];
+  p4 [label="p"];
+  p5 [label="p"];
+  p6 [label="p"];
+  tr1 [label="tr"];
+  tr2 [label="tr"];
+  tr3 [label="tr"];
+  tr4 [label="tr"];
+  td1 [label="td"];
+  td2 [label="td"];
+  td3 [label="td"];
+  td4 [label="td"];
+  td5 [label="td"];
+  html -> {head, body};
+  head -> {title, meta, link, style};
+  body -> {h1, article1, article2};
+  article1 -> {h2, p1, table, p2, p3};
+  table -> {thead, tbody};
+  tbody -> {tr1, tr2, tr3, tr4};
+  tr1 -> {td1, td2, td3, td4, td5};
+  article2 -> {h3, p4, p5, p6};
+}
