@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    form fieldset {
+      background-color: #eee;
+      margin: 20px;
+    }
+    form fieldset legend{
+      background-color: #B8E4F1;
+      width: 101.8%;
+      border: 1px solid #000;
+      margin-left: -1.2%;
+    }
+    form fieldset>div>*:first-child{
+      width: 25%;
+      display: inline-block;
+      text-align: right;
+      color:#63A1EC;
+      font-weight: bold;
+    }
+    form fieldset>div:nth-of-type(1) input{
+      width: 40%;
+    }
+    form fieldset #homedir {
+      display:inline-block;
+      vertical-align:top;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>User Details</legend>
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+      </div>
+      <div>
+        <span>User ID:</span>
+        <input type="radio" name="userid" id="automatic" value="automatic">
+        <label for="automatic">Automatic</label>
+        <input type="radio" name="userid" id="calculated" value="calculated">
+        <label for="calculated">Calculated</label>
+        <input type="radio" name="userid" id="">
+        <input type="text" name="" id="">
+      </div>
+      <div>
+        <label for="realname">Real name:</label>
+        <input type="text" name="realname" id="realname">
+      </div>
+      <div>
+        <span>Home directory:</span>
+        <div id="homedir">
+          <input type="radio" name="homedirectory" id="automatic2" value="automatic">
+          <label for="automatic2">Automatic</label><br>
+          <input type="radio" name="homedirectory" id="homedirectory" value="homedirectory">
+          <label for="homedirectory">Directory</label>
+          <input type="text" name="" id="">
+          <button>...</button>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Password</legend>
+    </fieldset>
+  </form>
+</body>
+</html>

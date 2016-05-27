@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* table */
+    table, td {
+      border-collapse: collapse;
+    }
+    table caption {
+      text-align: left;
+      font-weight: bold;
+    }
+    table thead {
+      background-color: #ccc;
+    }
+    table, td, th {
+      border: 1px solid #ccc;
+    }
+    table tbody tr:nth-child(even) {
+      background-color: #eee;
+    }
+    table tbody tr.up td:nth-child(2), table tbody tr.up td span {
+      background-color: #DCF3E2;
+    }
+    table tbody tr.down td:nth-child(2), table tbody tr.down td span {
+      background-color: #E8A9A9;
+    }
+    table tbody tr td a{
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    table tbody tr.http td:first-child {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAMkSURBVHjaYvz//z8DDNjZ2QHJ/wy/fv1mYGfnkJWRkWl0cnIK5+XlYbl27fqr589fPrl37/6Zo0cP9Xz79vUhSA9AADGADIBha2trBiMjQx5PT8/+jo7O99eu3fz/7dvP/9+//wLiH/+fPn37v6tr+n9ubt6ZMD0AAcTCgAS4uLiybWwc6v38AkWVlVXAYm/fvmf49u0Hw7Nn74AuY2JgZGRjYGZmFoLpAQggFAO8vb27cnPzuT59+s7w5s07hh8/fjF8+vSV4fXrjwy/f/9lEBMTZWBjYwUp/QPTAxBATMgGcHPzML1+/YHhz59fDEpKUgw/f/5mePz4NQMLCzODgAAPAw8PJ9AAFqDTGeF6AAIIxQV///5luHz5HsP3798YLCx0wLZxc3MAvcbJwMTECDYI6HwgG6EHIIBQDGBkZGLg5+cGuuA30N8/gXxGoCEgPzOBNbKysoAxUCVcD0AAoRjAxMQCjAU1hlev3oFt+/jxK1QzI9hWTk52Bj4+XpDBcDcABBCKAd+/g2wGpQE2oKL/DP/+/Qe7AoR5eHjAhj14cA8YNj9/wPQABBCKAf/+MTC+e/cFaMhXBg6g//8AQx4UDvz8gsBofMLQ29vxb/36FUe/f//SD9MDEEAoBrx58/rn71/f2EVEBRl+MX5jYP7CxPDt3XeGfft2McyfP+PJgwe32oHKZgBd9A+mByCAGJGTMhcXv7+4mGi6gZGhkYGNnpCanCHrpbOXGWbP7r/09u1rVxERkVeCggIML1++AobPR7AegABCSQeWlqYbRcWEvF6+eCaxeMrSiNePn/1WUZJnYGHnumtjZ//K09MDmF/sGTg4OOB6AAIIxQvAzLSAh5ePl5GN94PE+zMSbup3mP8wMTO89pC3ZdWPWsbJ+o/9wf37f5iYmCYDlR8B6QEIIBQDdLQN41XVNRk+/mJnkLn+kkFE9gEDgzgfQ/Y3fZELko6RQvysDIoKdxlWrVrJA0r5ID0AAYQSBjo6eqv+//uvDgy+X5q/33P56X6V4ORmYNt/kfnr4V8SLzhZ///7++cPy4MH91d9//69BaQHIMAACcEpZT3ev4YAAAAASUVORK5CYII=);
+      background-repeat: no-repeat;
+      background-position: center right;
+    }
+    table+p {
+      margin:0px;
+      font-size: 0.7em;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Servers</caption>
+    <thead>
+      <th>Host</th>
+      <th>Status</th>
+      <th>Server</th>
+    </thead>
+    <tbody>
+      <tr class="up">
+        <td><a href="#">localhost</a></td>
+        <td>Up</td>
+        <td><span>HTTP</span></td>
+      </tr>
+      <tr class="up http">
+        <td><a href="#">www.ifpb.edu.br</a></td>
+        <td>Up</td>
+        <td><span>HTTP</span></td>
+      </tr>
+      <tr class="up http">
+        <td><a href="#">www.ufpb.br</a></td>
+        <td>Up</td>
+        <td><span>HTTP</span></td>
+      </tr>
+      <tr class="up http">
+        <td><a href="#">www.ufcg.br</a></td>
+        <td>Up</td>
+        <td><span>HTTP</span></td>
+      </tr>
+      <tr class="down http">
+        <td><a href="#">www.ufpe.br</a></td>
+        <td>Up</td>
+        <td><span>HTTP</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Last Updated: 2015-01-01</p>
+</body>
+</html>
