@@ -10,25 +10,43 @@
       padding: 0px;
       padding-bottom: 20px;
     }
+    form fieldset>div{
+      margin-bottom: 10px;
+    }
     form fieldset>div:first-child{
       background-color: #B8E4F1;
       border-bottom: 1px solid #000;
       margin: 0px;
       margin-bottom: 20px;
+      font-weight: bold;
     }
-    form fieldset>div>*:first-child{
+    form fieldset:first-of-type>div>*:nth-child(even){
+      width: 40%;
+      display: inline-block;
+    }
+    form fieldset:nth-of-type(2)>div>*:nth-child(even){
+      width: 20%;
+      display: inline-block;
+    }
+    form fieldset:first-of-type>div:nth-of-type(1) input{
+      width: 40%;
+    }
+    form fieldset>div>*:nth-child(odd){
       width: 25%;
       display: inline-block;
       text-align: right;
       color:#63A1EC;
       font-weight: bold;
     }
-    form fieldset>div:nth-of-type(1) input{
-      width: 40%;
-    }
     form fieldset #homedir {
       display:inline-block;
       vertical-align:top;
+    }
+    #expirydate input{
+      width: 50px;
+    }
+    #passwordlabel {
+      width: 20.5%;
     }
   </style>
 </head>
@@ -42,12 +60,14 @@
       </div>
       <div>
         <span>User ID:</span>
-        <input type="radio" name="userid" id="automatic" value="automatic">
-        <label for="automatic">Automatic</label>
-        <input type="radio" name="userid" id="calculated" value="calculated">
-        <label for="calculated">Calculated</label>
-        <input type="radio" name="userid" id="">
-        <input type="text" name="" id="">
+        <span>
+          <input type="radio" name="userid" id="automatic" value="automatic">
+          <label for="automatic">Automatic</label>
+          <input type="radio" name="userid" id="calculated" value="calculated">
+          <label for="calculated">Calculated</label>
+          <input type="radio" name="userid" id="">
+          <input type="text" name="" id="">
+        </span>
       </div>
       <div>
         <label for="realname">Real name:</label>
@@ -55,18 +75,54 @@
       </div>
       <div>
         <span>Home directory:</span>
-        <div id="homedir">
+        <span id="homedir">
           <input type="radio" name="homedirectory" id="automatic2" value="automatic">
           <label for="automatic2">Automatic</label><br>
           <input type="radio" name="homedirectory" id="homedirectory" value="homedirectory">
           <label for="homedirectory">Directory</label>
           <input type="text" name="" id="">
           <button>...</button>
-        </div>
+        </span>
       </div>
     </fieldset>
     <fieldset>
       <div>Password</div>
+      <div>
+        <label for="">Password changed</label>
+        <span id="passwordlabel">Never</span>
+        <span>Expiry date</span>
+        <span id="expirydate">
+          <input type="text" name="" id="">/
+          <select name="" id="">
+            <option value="1">jan</option>
+            <option value="2">fev</option>
+            <option value="3">mar</option>
+          </select>/
+          <input type="text" name="" id="">
+          <button>...</button>
+        </span>
+      </div>
+      <div>
+        <label for="mindays">Minimum days</label>
+        <input type="text" name="mindays" id="mindays">
+        <label for="maxdays">Maximum days</label>
+        <input type="text" name="maxdays" id="maxdays">
+      </div>
+      <div>
+        <label for="warningdays">Warning days</label>
+        <input type="text" name="warningdays" id="warningdays">
+        <label for="inactivedays">Inactive days</label>
+        <input type="text" name="inactivedays" id="inactivedays">
+      </div>
+      <div>
+        <span>Force change at next login</span>
+        <span>
+          <input type="radio" name="" id="">
+          <label for="">yes</label>
+          <input type="radio" name="" id="">
+          <label for="">no</label>
+        </span>
+      </div>
     </fieldset>
   </form>
 </body>
