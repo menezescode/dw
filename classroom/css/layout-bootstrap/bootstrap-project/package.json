@@ -1,0 +1,17 @@
+{
+  "name": "bootstrap-project",
+  "version": "1.0.0",
+  "description": "meu projeto de teste do npm",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3",
+    "jquery": "^2.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
