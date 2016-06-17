@@ -51,3 +51,12 @@ var array = Array(1, "lorem", true, null);
 console.log(array);
 var array = new Array(10);
 console.log(array);
+
+// Spread operator - ES6
+var params = [ "hello", true, 7 ];
+var other = [ 1, 2, ...params ];
+console.log(other);
+
+var params = [ "hello", true, 7 ];
+var other = [ 1, 2].concat(params);
+console.log(other);

@@ -35,7 +35,11 @@ console.log(ip);
 // clone
 var a = {myProp: "value"};
 var cloneOfA = JSON.parse(JSON.stringify(a));
-var cloneOfA = Object.assign({}, x); // ES6
+cloneOfA.value = "value";
+console.log(a);
+console.log(cloneOfA);
+var cloneOfA = Object.assign({}, a); // ES6
+console.log(a);
 
 // Web API / RestFull
 // http://ip-api.com/docs/

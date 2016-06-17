@@ -11,6 +11,9 @@ console.log(1 == 1);
 console.log(1 === 1);
 // null e undefined
 
+// 2 ** 3
+console.log(Math.pow(2,3));
+
 // Equality & Comparison
 // http://dorey.github.io/JavaScript-Equality-Table/
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness

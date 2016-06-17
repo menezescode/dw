@@ -6,10 +6,16 @@ console.log(variable);
 variable = "lorem ipsum";
 console.log(variable);
 
-// Primitives (numbers, strings etc) are passed by value.
+// Primitives (numbers, strings, boolean etc) are passed by value.
 var variable_temp = variable;
 console.log(variable_temp);
 variable = 10;
+console.log(variable_temp);
+
+var variable = new String("lorem ipsum");
+var variable_temp = variable;
+variable_temp = Number(10);
+console.log(variable);
 console.log(variable_temp);
 
 // case sensitive
@@ -48,7 +54,14 @@ console.log(maskAdd);
 var {mask: maskAdd, ip: ipAdd} = {ip: "192.168.0.2", mask: "255.255.255.0"};
 console.log(ipAdd);
 console.log(maskAdd);
+var {mask: maskAdd, ip: ipAdd, ip: ipAdd2} = {ip: "192.168.0.2", mask: "255.255.255.0"};
+console.log(ipAdd);
+console.log(ipAdd2);
+console.log(maskAdd);
 // Destructuring Assignment / Fail-Soft Destructuring
 var [ip, mask = "255.255.255.0"] = ["192.168.0.2"];
+console.log(ip);
+console.log(mask);
+var [ip, mask = "255.255.255.0"] = ["192.168.0.2", "255.255.0.0"];
 console.log(ip);
 console.log(mask);
