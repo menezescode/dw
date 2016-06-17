@@ -1,5 +1,9 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
 
+// The Abstract Equality Comparison Algorithm
+// http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3
+// The Strict Equality Comparison Algorithm
+// http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.6
 // Strict Equal ===
 console.log(1 == "1");
 console.log(1 === "1");

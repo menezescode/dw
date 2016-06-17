@@ -32,6 +32,11 @@ var ip_home = ip;
 ip_home.version = "v6";
 console.log(ip);
 
+// clone
+var a = {myProp: "value"};
+var cloneOfA = JSON.parse(JSON.stringify(a));
+var cloneOfA = Object.assign({}, x); // ES6
+
 // Web API / RestFull
 // http://ip-api.com/docs/
 // http://ip-api.com/docs/api:json

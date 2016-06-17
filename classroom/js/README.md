@@ -15,3 +15,15 @@ https://github.com/burningtree/awesome-json#datasets
 https://github.com/sorrycc/awesome-javascript
 https://github.com/addyosmani/es6-tools
 http://speakingjs.com/es5/index.html
+
+https://babeljs.io/
+https://github.com/lukehoban/es6features/blob/master/README.md
+http://es6-features.org/#Constants
+http://www.ecma-international.org/ecma-262/6.0/
+http://kangax.github.io/compat-table/es6/
+https://developers.google.com/v8/
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
