@@ -60,3 +60,53 @@ console.log(other);
 var params = [ "hello", true, 7 ];
 var other = [ 1, 2].concat(params);
 console.log(other);
+
+console.log([1, 2, 3, 2].indexOf(2));
+console.log([1, 2, 3, 2].indexOf(2, 2));
+
+// function programming / Iteration methods
+
+// forEach
+ips = [
+  {address: "192.168.0.2", mask: "255.255.255.0"},
+  {address: "192.168.0.10", mask: "255.255.255.0"},
+  {address: "192.168.0.26", mask: "255.255.255.0"},
+  {address: "192.168.0.30", mask: "255.255.255.0"}
+]
+ips.forEach(function(ip){
+  console.log(ip.address);
+});
+
+// entries
+for([key, value] of [1,2,3].entries()){
+  console.log(`${key} => ${value}`);
+}
+
+// every
+console.log([1, 2, 3].every(function(value){return value % 2 ==0}));
+console.log([1, 2, 3].every((value) => value % 2 ==0));
+console.log([2, 4, 6].every((value) => value % 2 ==0));
+
+// some
+console.log([1, 2, 3].some(function(value){return value % 2 ==0}));
+
+// filter
+console.log([1, 2, 3, 4, 5, 6].filter(function(value){return value % 2 ==0}));
+console.log([1, 2, 3, 4, 5, 6].filter(function(value){return value % 2 ==0}));
+
+array = [1, 2, 3, 4, 5, 6]
+even = array.filter(function(value){return value % 2 ==0})
+console.log(array.indexOf(even[0]));
+console.log(array.indexOf(even[1]));
+
+// find
+console.log([1, 2, 3, 4, 5, 6].find(function(value){return value % 2 ==0}));
+
+// map
+console.log([1, 2, 3, 4, 5, 6].map((value) => value * 2));
+
+// reduce
+console.log([1, 2, 3].reduce((addition, value) => addition + value));
+
+// reduceRight
+console.log([1, 2, 3].reduceRight((addition, value) => addition + value));

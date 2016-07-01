@@ -1,0 +1,11 @@
+// input
+var name = window.prompt("Digite um nome:");
+document.querySelector('#algumInput').value; // input:t
+document.querySelector('#algumaDiv').innerHTML; // div, p
+
+// output
+console.log("Alguma string");
+window.alert("Alguma string");
+document.querySelector('#algumInput').value = "fulano";
+document.querySelector('#algumDiv').innerHTML = "fulano";
+document.write("Alguma string");

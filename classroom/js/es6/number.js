@@ -17,6 +17,22 @@ console.log(-.14);
 console.log(3.1E-12);
 console.log(3.1e+12);
 console.log(-3.1e+12);
+//NaN
+console.log(NaN);
+console.log(Number.NaN);
+console.log(0/0);
+console.log(parseInt(1));
+console.log(parseInt('1'));
+console.log(parseInt('1a'));
+console.log(parseInt('a1'));
+console.log(parseInt(true));
+
+console.log(Number.isNaN(0/0));
+console.log(Number.isNaN(parseInt(1)));
+console.log(Number.isNaN(parseInt('1')));
+console.log(Number.isNaN(parseInt('1a')));
+console.log(Number.isNaN(parseInt('a1')));
+console.log(Number.isNaN(parseInt(true)));
 
 // OO
 console.log(new Number(15));

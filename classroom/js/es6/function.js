@@ -80,4 +80,31 @@ console.log([1,1,1].reduce(function(sum,value){return sum+value}, 0));
 
 // es6 Arrow Function
 const sum = (param1, param2) => param1 + param2;
+
 console.log([1,1,1].reduce((sum,value) => sum+value));
+
+function summation(...numbers){
+  hasNumbers = numbers.every((number) => !Number.isNaN(parseInt(number)));
+  if(hasNumbers)
+    return numbers.reduce((addition, number) => addition + number);
+  else
+    throw "Has NaN";
+    // throw new HasNaNException("Has NaN"); // TODO create execption
+}
+try{
+  console.log(summation(1));
+  console.log(summation(1, 'a'));
+  console.log(summation(1, 2, 3));
+  console.log(summation(1, 2, 3, 4, 5));
+}catch(e){
+  console.log(e);
+  // console.log(e.message, e.name);
+}
+function multiplication(...numbers){
+  return numbers.reduce((product, number) => product * number);
+}
+console.log(multiplication(1));
+console.log(multiplication(1, 2, 3));
+console.log(multiplication(1, 2, 3, 4, 5));
+
+// TODO clousure, higher-order function, Destructuring Assignment
