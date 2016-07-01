@@ -1,10 +1,20 @@
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Variables
 var variable;
+var 1variable; // digits
+// identifier must start with a letter, underscore (_), or dollar sign ($)
+var &variable; // special character
+var _variable;
+var $variable;
 
 // dinâmica
 variable = 10;
 console.log(variable);
 variable = "lorem ipsum";
 console.log(variable);
+
+// Hoisting
+console.log(variable);
+var variable = 10;
 
 // Primitives (numbers, strings, boolean etc) are passed by value.
 var variable_temp = variable;
